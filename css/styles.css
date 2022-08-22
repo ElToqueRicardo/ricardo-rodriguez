@@ -1,0 +1,35 @@
+body {
+ background-color: #16201f;
+
+}
+
+.for-paddingH1{
+  margin-top: 70px;
+}
+
+.myBtnColor{
+
+  background-color: #1B5E71 !important;
+}
+
+.myBtnColor:hover {
+  background-color: #5A9BB1 !important;
+}
+/* Music List*/
+.liColor{
+ color: white; 
+}
+
+.liAnchor{
+  background-color:rgba(13, 13, 13, 0.0)!important;
+}
+
+.ulStyle{
+  background-color:rgba(13, 13, 13, 0.1)!important;
+}
+
+/*Footer*/
+
+.footerColor{
+  background-color: rgba(19, 17, 17, 0.65);
+}
