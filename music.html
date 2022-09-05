@@ -60,7 +60,7 @@
                 <hr class="dropdown-divider">
               </li>
               <li><a class="dropdown-item" href="mi-musica.html">Español</a></li>
-              
+
             </ul>
           </li>
 
@@ -94,7 +94,7 @@
             <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
               data-bs-toggle="dropdown" aria-expanded="false">
               Piano
-            </a>            
+            </a>
 
             <ul class="dropdown-menu ulStyle" aria-labelledby="dropdownMenuLink">
 
@@ -105,7 +105,7 @@
                     <source src="audio/invierno.mp3" type="audio/mp3">
                   </audio>
                 </a>
-              </li>      
+              </li>
 
               <li> <em class="opacity-50 liColor">Last Night I Dreamt of Kissing You</em>
                 <a class="dropdown-item liAnchor">
@@ -114,7 +114,7 @@
                   </audio>
                 </a>
               </li>
-              
+
 
               <li> <em class="opacity-50 liColor">Inocencia Perversa</em>
                 <a class="dropdown-item liAnchor">
@@ -122,10 +122,10 @@
                     <source src="audio/InocenciaPerversa.mp3" type="audio/mp3">
                   </audio>
                 </a>
-              </li>        
+              </li>
 
 
-          
+
               <li> <em class="opacity-50 liColor">Maldita nostalgia </em>
                 <a class="dropdown-item liAnchor">
                   <audio controls>
@@ -156,7 +156,7 @@
                 </a>
               </li>
 
-              
+
 
               <li> <em class="opacity-50 liColor">Aires de mar </em>
                 <a class="dropdown-item liAnchor">
@@ -166,7 +166,7 @@
                 </a>
               </li>
 
-              
+
 
               <li> <em class="opacity-50 liColor">Serenidad </em>
                 <a class="dropdown-item liAnchor">
@@ -176,7 +176,7 @@
                 </a>
               </li>
 
-              
+
 
               <li> <em class="opacity-50 liColor"> Buscandote un nombre </em>
                 <a class="dropdown-item liAnchor">
@@ -200,7 +200,7 @@
               For Sale
             </a>
 
-            
+
 
             <ul class="dropdown-menu ulStyle" aria-labelledby="dropdownMenuLink">
               <li> <em class="opacity-50 liColor"> Nada está escrito </em>
@@ -211,7 +211,7 @@
                 </a>
               </li>
 
-              
+
 
               <li> <em class="opacity-50 liColor"> AM </em>
                 <a class="dropdown-item liAnchor">
@@ -221,7 +221,7 @@
                 </a>
               </li>
 
-              
+
 
               <li> <em class="opacity-50 liColor"> Lo dije mil veces </em>
                 <a class="dropdown-item liAnchor">
@@ -256,6 +256,16 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
     integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
     crossorigin="anonymous"></script>
+  <script>
+    document.addEventListener('play', function (e) {
+      var audios = document.getElementsByTagName('audio');
+      for (var i = 0, len = audios.length; i < len; i++) {
+        if (audios[i] != e.target) {
+          audios[i].pause();
+        }
+      }
+    }, true);
+  </script>
 </body>
 
 </html>
