@@ -33,3 +33,8 @@ body {
 .footerColor{
   background-color: rgba(19, 17, 17, 0.65);
 }
+
+.text-reset{
+  text-decoration: none;
+
+}
